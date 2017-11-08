@@ -1,9 +1,8 @@
-import React from 'react';
+import React, { Component } from 'react'
 
-export default class ControlledInput extends React.Component {
+export default class ControlledInput extends Component {
   constructor() {
     super();
-
     this.state = {
       value: '',
     };
@@ -13,7 +12,7 @@ export default class ControlledInput extends React.Component {
     this.setState({
       value: event.target.value,
     });
-  }
+  };
 
   render() {
     return (
