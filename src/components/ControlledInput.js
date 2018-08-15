@@ -8,23 +8,26 @@ export default class ControlledInput extends React.Component {
 
   handleChange = event => {
     this.setState({
-      [event.target.name]: event.target.value
-    })
+      value: event.target.value,
+    });
   }
 
   handleSubmit = event => {
     event.preventDefault()
     this.sendFormDataSomewhere(this.state)
   }
-  
-    render() {
-      return (
-        <form onSubmit={event => this.handleSubmit(event)}>
-          <input type="text" name="firstName" value={this.state.firstName}  onChange={this.handleChange}/>
-          <input type="text" name="lastName" value={this.state.lastName}  onChange={this.handleChange} />
-        </form>
-      );
-    }
+
+  render() {
+    return (
+      <form onSubmit={event => this.handleSubmit(event)}>
+        <input
+          type="text"
+          value={this.state.value}
+          onChange={this.handleChange}
+        />
+      </form>
+    );
+  }
   }
 //Form elements include `<input>`, `<textarea>`, `<select>`, and `<form>` itself.
 // When we talk about inputs in this lesson, we broadly mean the form elements

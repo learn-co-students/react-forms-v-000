@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import Reservation from './components/Reservation';
+import ControlledInput from './components/ControlledInput';
 
 ReactDOM.render(
-  <Reservation />,
+  <ControlledInput />,
   document.getElementById('root')
 );
