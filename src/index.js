@@ -1,7 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
+import Reservation from './components/Reservation';
+
 ReactDOM.render(
-  <div>Mount Components Here</div>,
+  <Reservation />,
   document.getElementById('root')
 );
