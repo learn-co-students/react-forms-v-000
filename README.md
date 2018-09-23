@@ -7,7 +7,7 @@ In this lesson, we'll discuss how to set up a controlled form in React.
 ## Objectives
 
 1. Explain how React uses `value` on, e.g., `<input>`
-2. Check whether a component is controlled or uncontrolled
+2. Check whether a component is conolled or uncontrolled
 3. Describe strategies for using controlled components
 4. Use controlled inputs to validate values
 5. Distinguish between `value` and `defaultValue` in a React controlled component
