@@ -11,6 +11,11 @@ class ControlledInput extends React.Component {
       value: event.target.value,
     });
   }
+
+  handleSubmit = event => {
+    event.preventDefault()
+    alert("Submitted!")
+  }
  
   render() {
     return (
