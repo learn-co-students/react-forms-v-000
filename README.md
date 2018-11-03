@@ -30,7 +30,7 @@ class Form extends Component {
   state = {
     firstName: "John",
     lastName: "Henry"
-  }
+  } 
 
   render() {
     return (
