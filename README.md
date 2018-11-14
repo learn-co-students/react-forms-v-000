@@ -25,7 +25,7 @@ new. In React, it is often a good idea to set up _controlled_ forms. A
 controlled form is **a form that derives its input values from state**. Consider the
 following:
 
-```js
+```js beep.
 class Form extends Component {
   state = {
     firstName: "John",
