@@ -24,7 +24,7 @@
     "react-dom": "^16.4.1"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "PORT=5000 react-scripts start",
     "build": "react-scripts build",
     "dev:hot": "webpack-dev-server --hot --inline --progress --colors --watch --display-error-details --display-cached --content-base ./",
     "eject": "react-scripts eject"
