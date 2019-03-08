@@ -1,4 +1,4 @@
-# React Controlled Components
+# React Controlled Components.
 
 ## Overview
 
