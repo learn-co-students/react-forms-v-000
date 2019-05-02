@@ -11,6 +11,13 @@ class ControlledInput extends React.Component {
 		});
 	};
 
+	// handleChange = (event) => {
+	// 	this.setState({
+	// 		[event.target.value]: event.target.value
+	// 	});
+	// };
+
+
 	handleSubmit = (event) => {
 		event.preventDefault();
 		this.sendFormDataSomewhere(this.state);
