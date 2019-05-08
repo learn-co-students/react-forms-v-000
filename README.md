@@ -2,7 +2,6 @@
 
 ## Overview
 
-In this lesson, we'll discuss how to set up a controlled form in React.
 
 ## Objectives
 
