@@ -1,31 +1,29 @@
-// Code ControlledInput Component Here
-import React from 'react'
+import React from 'react';
 
-class ControlledInput extends React.Component{
-  state = {
+class ControlledInput extends React.Component {
+  constructor() {
+    super();
+
+    this.state = {
       value: '',
-    }
+    };
+  }
 
-    handleChange = event => {
-      this.setState({
-        value: event.target.value,
-      });
-    }
-    handleSubmit = event => {
-      event.preventDefault()
-      this.sendFormDataSomewhere(this.state)
-    }
-    
-    render() {
-      return (
-        <form onSubmit={event => this.handleSubmit(event)}>
-          <input
-            type="text"
-            value={this.state.value}
-            onChange={this.handleChange}
-          />
-        </form>
-      );
-    }
+  handleChange = event => {
+    this.setState({
+      value: event.target.value,
+    });
+  }
+
+  render() {
+    return (
+      <input
+        type="text"
+        value={this.state.value}
+        onChange={this.handleChange}
+      />
+    );
+  }
 }
-export default ControlledInput
+
+export default ControlledInput;
