@@ -1,3 +1,4 @@
+// src/components/DisplayData.js
 import React from 'react';
 
 class DisplayData extends React.Component {
