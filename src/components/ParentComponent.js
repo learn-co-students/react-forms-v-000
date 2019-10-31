@@ -5,13 +5,15 @@ import React from 'react';
 import Form from './Form';
 import DisplayData from './DisplayData'
 
-import { defaultCipherList } from 'constants';
+// import { defaultCipherList } from 'constants';
+// Test
 
 class ParentComponent extends React.Component {
     state = {
-        firstName: "John",
-        lastName: "Henry"
+        firstName: "",
+        lastName: "",
     }
+    /*
     handleFirstNameChange = event => {
         this.state({
             firstName: event.target.value
@@ -23,15 +25,27 @@ class ParentComponent extends React.Component {
             lastName: event.target.value
         })
     }
+    INSTEAD. We MAKE THIS CODE DYNAMIC BY:
+    */
+    
+    handleChange = event => {
+        this.setState({
+                    [event.target.name]: event.target.value
+                })
+            }
 
     render() {
         return (
+            <div>
             <Form
                 formData={this.state}
-                handleFirstNameChange={this.handleFirstNameChange}
-                handleLastNameChange={this.handleLastNameChange}
-            
-            />
+                // handleFirstNameChange={this.handleFirstNameChange}
+                // handleLastNameChange={this.handleLastNameChange}
+                //  THIS is CHANGED TO. 
+
+                handleChange={this.handleChange}/>
+            < DisplayData formData={this.state} />
+            </div>
         )
     }
 
