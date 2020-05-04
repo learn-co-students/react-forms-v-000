@@ -25,6 +25,7 @@ class ParentComponent extends React.Component {
         <Form
           formData={this.state}
           handleChange={this.handleChange}
+          handleSubnit={this.handleSubmit}
         />
         <DisplayData formData={this.state} />
       </div>
