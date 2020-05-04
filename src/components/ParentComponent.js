@@ -13,6 +13,11 @@ class ParentComponent extends React.Component {
       [event.target.name]: event.target.value
     })
   }
+
+  handleSubmit = event => {
+    event.preventDefault()
+    alert("You submitted your name: " + this.state.firstName + " " + this.state.lastName);
+  }
  
   render() {
     return (
