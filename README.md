@@ -47,7 +47,7 @@ class Form extends React.Component {
 export default Form;
 ```
 
-With the setup above, the two text `input`s will display the corresponding state
+With the setup above, the two text `input`(s) will display the corresponding state
 values.
 
 <img src="https://curriculum-content.s3.amazonaws.com/react/react-forms/Image_20_Flowchart.png" width="300" alt="Diagram of the form component's state populating a form"/>
