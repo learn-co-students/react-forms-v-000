@@ -20,7 +20,13 @@ class ParentComponent extends Component {
   }
 
   render() { 
-    return (  );
+    return (  
+      <Form
+        formData={this.state}
+        handleFirstNameChange={this.handleFirstNameChange}
+        handleLastNameChange={this.handleLastNameChange}
+      />
+    )
   }
 }
  
