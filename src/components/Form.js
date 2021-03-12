@@ -30,37 +30,8 @@ they are easily passed down as props or sent upward
 */ 
 
     
-    //  Function to handle submit
-            // handleSubmit = event => {
-            //     event.preventDefault()
-            //     formData = { firstName: this.state.firstName, lastName: this.state.state.lastName }
-            //     //  putting together the current form data using the values stored in state.
-            //     this.sendFormDataSomewhere(formData)
-            //     // sendFormDataSomewhere send our data off to somewhere. Often it a prop. In most cases, it send it off to the 
-            //     //  server here. But for here, we have it store in the State by listing out the submission
-            //     this.setState({submittedData: dataArray})
-            // }
-            
-            // listOfSubmission = () => {
-            //     return this.state.submittiedData.map(data => {
-            //         return <div><span>{data.firstName}</span><span>{data.lastName}</span></div>
-            //     })
-            // }
-            
-    // render(){
-    //     return (
-    //         //  we setup onSubmit to submit a form. Submit a Form
-    //         //  Write a function to Handle "this.handleSubmit(event)"
-    //     <div>
-    //         <form onSubmit={event => this.handleSubmit(event)}>
-    //             <input type="text" onChange={event => this.handleFirstNameChange(event)}  value={this.state.firstName}/>
-    //             <input type="text" onChange={event => this.handleLastNameChange(event)}  value={this.state.lastName}/>
-    //         <input type="submit"/>
-    //         </form>
-    //         { this.listOfSubmission() }
-    //      </div>
-    //     )
-    // }
+  
+   
 }
 export default Form;
 

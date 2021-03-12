@@ -1,3 +1,5 @@
+//  A New function was added for this lab.
+
 //  this was created as a parent components.
 //  This Handles all the logic while Form HAndles all the display of JSX
 
@@ -43,8 +45,10 @@ class ParentComponent extends React.Component {
                 // handleLastNameChange={this.handleLastNameChange}
                 //  THIS is CHANGED TO. 
 
-                handleChange={this.handleChange}/>
-            < DisplayData formData={this.state} />
+                    handleChange={this.handleChange} />
+                
+                < DisplayData formData={this.state} /> 
+                {/* only delays with Display Data here */}
             </div>
         )
     }
