@@ -44,18 +44,18 @@ class OriginalForm extends React.Component {
     return (
       <div>
         <form
-          onSubmit={e => this.handleSubmit(e)}
+          onSubmit={this.handleSubmit}
         >
           <input
             type="text"
             name="firstName"
-            onChange={e => this.handleFirstNameChange(e)}
+            onChange={this.handleFirstNameChange}
             value={this.state.firstName}
           />
           <input
             type="text"
             name="lastName"
-            onChange={e => this.handleLastNameChange(e)}
+            onChange={this.handleLastNameChange}
             value={this.state.lastName}
           />
           <input
